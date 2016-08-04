@@ -6,4 +6,6 @@ module.exports = function(birth, res){
   let durationStr = moment.duration(age).humanize(true);
   res.write(`${durationStr}`);
   res.end('\n');
+
+  //comment
 }
