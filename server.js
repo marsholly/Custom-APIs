@@ -17,12 +17,12 @@ let server = http.createServer((req, res)=>{
       let num2 = parseInt(urlParts[3]);
       const mathPath = require(`./${operation}`)(num1, num2, res);
       switch(operation){  
-        case 'addition': break;
-        case 'subtraction': break;
-        case 'multiplication': break;
-        case 'division': break;
-        case 'squaring': break;
-        case 'cubing': break;
+        case 'addition': mathPath; break;
+        case 'subtraction': mathPath; break;
+        case 'multiplication': mathPath; break;
+        case 'division': mathPath; break;
+        case 'squaring': mathPath; break;
+        case 'cubing': mathPath; break;
         default: 
               res.statusCode = 404;
               res.end('Not found.\n');  
